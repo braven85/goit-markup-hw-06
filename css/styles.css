@@ -774,7 +774,6 @@ img {
 
 .leave-your-data {
   position: relative;
-  border: 1px solid black;
   top: 40px;
   left: 40px;
   right: 40px;
@@ -825,4 +824,49 @@ img {
   491 - (24 + 342 + 23) = 491 - 389 = 102px */
   left: 164px;
   right: 164px;
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.input-field {
+  width: 448px;
+  height: 40px;
+  padding-top: 4px;
+}
+
+.input-container {
+  display: block;
+}
+
+.label-name {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
+}
+
+.input-name {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input-field input {
+  padding-left: 30px;
+
+  /* NIE DZIAŁA */
+  background-image: url('./images/icons.svg#icon-person-black');
+
+  /* DZIAŁA */
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/90/Ic_person_48px.svg'); */
+
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 10px;
 }

@@ -329,7 +329,23 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
           <div class="leave-your-data">Zostaw swoje dane w formularzu poniżej</div>
-          <div class="form-main-window"></div>
+          <div class="form-main-window">
+            <form name="leave-your-data-form">
+              <div class="input-container">
+                <label for="name" class="label-name">Imie</label>
+                <div class="input-field">
+                  <input class="input-name" type="text" name="name" id="name" />
+
+                  <!-- poniżej test dla sprawdzenia czy ikonka działa-->
+                  <svg class="form-icon">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
+                  <!-- koniec testu-->
+                  
+                </div>
+              </div>
+            </form>
+          </div>
           <div class="rules-and-policy"></div>
           <div class="send-button"></div>
         </div>

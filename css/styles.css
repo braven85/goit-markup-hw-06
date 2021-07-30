@@ -788,31 +788,6 @@ img {
   color: var(--black-color);
 }
 
-.form-main-window {
-  position: relative;
-  border: 1px solid black;
-  top: 52px;
-  /* 75px minus height of .leave-your-data 23px */
-  left: 40px;
-  right: 40px;
-  width: 448px;
-  height: 342px;
-}
-
-.rules-and-policy {
-  position: relative;
-  border: 1px solid black;
-  top: 72px;
-  /* 437px minus height of .form-main-window
-  and .leave-your-data =
-  437 - (342 + 23) = 437 - 365 = 72px */
-  left: 55px;
-  right: 54px;
-  bottom: 120px;
-  width: 419px;
-  height: 24px;
-}
-
 .send-button {
   position: relative;
   border: 1px solid black;
@@ -825,9 +800,20 @@ img {
   left: 164px;
   right: 164px;
 }
+
 /* ======================= */
 /* ====== FORM MAIN ====== */
 /* ======================= */
+
+.form-main-window {
+  position: relative;
+  top: 52px;
+  /* 75px minus height of .leave-your-data 23px */
+  left: 40px;
+  right: 40px;
+  width: 448px;
+  height: 342px;
+}
 
 .input-container {
   margin-bottom: 10px;
@@ -880,3 +866,46 @@ img {
 .input-field .input-email {
   background-image: url('../images/svg/icon-envelope.svg');
 }
+
+.input-comment-field-outside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input-comment {
+  width: 416px;
+  height: 96px;
+  border: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  /* color: rgba(117, 117, 117, 0.5); */
+}
+
+/* ====================== */
+/* == RULES AND POLICY == */
+/* ====================== */
+
+.rules-and-policy {
+  position: relative;
+  border: 1px solid black;
+  top: 72px;
+  /* 437px minus height of .form-main-window
+  and .leave-your-data =
+  437 - (342 + 23) = 437 - 365 = 72px */
+  left: 55px;
+  right: 54px;
+  bottom: 120px;
+  width: 419px;
+  height: 24px;
+  display: flex;
+}
+

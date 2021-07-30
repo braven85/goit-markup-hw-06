@@ -323,43 +323,50 @@
       </section>
 
       <!-- MODAL WINDOW -->
-      <div class="backdrop" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal-box">
           <svg class="close-btn" data-modal-close>
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
           <div class="leave-your-data">Zostaw swoje dane w formularzu poniżej</div>
           <div class="form-main-window">
-            <form name="leave-your-data-form">
-              <div class="input-container">
-                <label for="name" class="label">Imie</label>
-                <div class="input-field">
-                  <input class="input-name" type="text" name="name" id="name" />
-                </div>
+            <form name="leave-your-data-form" autocomplete="off">
+              <label for="name" class="label">Imie</label>
+              <div class="input-field">
+                <svg class="label-icon">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+                <input class="data-input" type="text" name="name" id="name" />
               </div>
-              <div class="input-container">
-                <label for="phone-number" class="label">Telefon</label>
-                <div class="input-field">
-                  <input class="input-phone" type="text" name="phone" id="phone-number" />
-                </div>
+              <label for="phone-number" class="label">Telefon</label>
+              <div class="input-field">
+                <svg class="label-icon">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+                <input class="data-input" type="text" name="phone" id="phone-number" />
               </div>
-              <div class="input-container">
-                <label for="email" class="label">Email</label>
-                <div class="input-field">
-                  <input class="input-email" type="text" name="email" id="email" />
-                </div>
+              <label for="email" class="label">Email</label>
+              <div class="input-field">
+                <svg class="label-icon">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+                <input class="data-input" type="text" name="email" id="email" />
               </div>
               <div class="textfield-container">
                 <label for="comment" class="label">Komentarz</label>
                 <textarea class="input-comment" type="text" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
               </div>
+              <div class="rules-and-policy">
+                <input type="checkbox" id="rules" name="rules" class="input-checkbox" />
+                <label for="rules" class="label-checkbox"
+                  >Oświadczam iż akceptuję <a class="checkbox-link" href="#">Regulamin</a> i <a class="checkbox-link" href="#">Politykę Prywatności.</a></label
+                >
+              </div>
+              <div class="send-button">
+                <button type="submit" class="submit-button">Wyślij</button>
+              </div>
             </form>
           </div>
-          <div class="rules-and-policy">
-            <input type="checkbox" id="rules" name="rules" class="input-checkbox" />
-            <label for="rules" class="label-checkbox">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
-          </div>
-          <div class="send-button"></div>
         </div>
       </div>
     </main>
@@ -416,6 +423,18 @@
             </li>
           </ul>
         </div>
+
+        <form class="sign-up">
+          <div class="sign-up-text">ZAPISZ SIĘ DO NEWSLETTERA</div>
+          <div class="newsletter-fields">
+            <input class="sign-up-email" type="email" name="email" placeholder="E-mail" autocomplete="off"></input>
+            <button type="submit" class="newsletter-button">Zapisz się
+              <svg class="newsletter-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 

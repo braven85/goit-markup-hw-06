@@ -825,10 +825,12 @@ img {
   left: 164px;
   right: 164px;
 }
+/* ======================= */
+/* ====== FORM MAIN ====== */
+/* ======================= */
 
-.form-icon {
-  width: 18px;
-  height: 18px;
+.input-container {
+  margin-bottom: 10px;
 }
 
 .input-field {
@@ -837,11 +839,7 @@ img {
   padding-top: 4px;
 }
 
-.input-container {
-  display: block;
-}
-
-.label-name {
+.label {
   font-family: inherit;
   font-size: 12px;
   line-height: 1.166;
@@ -849,7 +847,9 @@ img {
   color: rgba(117, 117, 117, 1);
 }
 
-.input-name {
+.input-name,
+.input-phone,
+.input-email {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -857,10 +857,26 @@ img {
   border-radius: 4px;
 }
 
-.input-field input {
+.input-field .input-name,
+.input-field .input-phone,
+.input-field .input-email {
   padding-left: 30px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 16c2.947 0 5.333-2.387 5.333-5.333s-2.387-5.333-5.333-5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333zM16 18.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 0.733 0.6 1.333 1.333 1.333h18.667c0.733 0 1.333-0.6 1.333-1.333v-1.333c0-3.547-7.107-5.333-10.667-5.333z"></path></svg>');
-  background-size: 18px 18px;
+  /* background-image: url('../images/icons.svg#icon-person-black'); */
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 16c2.947 0 5.333-2.387 5.333-5.333s-2.387-5.333-5.333-5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333zM16 18.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 0.733 0.6 1.333 1.333 1.333h18.667c0.733 0 1.333-0.6 1.333-1.333v-1.333c0-3.547-7.107-5.333-10.667-5.333z"></path></svg>'); */
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"></svg>'); */
+  background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: 10px;
+}
+
+.input-field .input-name {
+  background-image: url('../images/svg/icon-person.svg');
+}
+
+.input-field .input-phone {
+  background-image: url('../images/svg/icon-phone.svg');
+}
+
+.input-field .input-email {
+  background-image: url('../images/svg/icon-envelope.svg');
 }

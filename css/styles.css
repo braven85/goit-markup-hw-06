@@ -72,7 +72,9 @@ img {
   padding-bottom: 94px;
 }
 
+/* ================ */
 /* ==== HEADER ==== */
+/* ================ */
 
 .header {
   border-bottom: 1px solid var(--header-border-color);
@@ -196,7 +198,9 @@ img {
   color: var(--grey-color);
 }
 
+/* ================ */
 /* ==== EFFECTIVE SOLUTIONS ==== */
+/* ================ */
 
 .effective-solutions {
   background-image: linear-gradient(rgba(47, 50, 58, 0.4), rgba(47, 50, 58, 0.4)), url('../images/mainPageBackground.png');
@@ -250,7 +254,9 @@ img {
   cursor: pointer;
 }
 
+/* ================ */
 /* ==== OUR ATTRIBUTES ==== */
+/* ================ */
 
 .our-attributes-list {
   display: flex;
@@ -294,7 +300,9 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* ================ */
 /* ==== WHAT DO WE DO ==== */
+/* ================ */
 
 .what-do-we-do-title {
   margin-bottom: 50px;
@@ -335,7 +343,9 @@ img {
   justify-content: center;
 }
 
+/* ================ */
 /* ==== OUR TEAM ==== */
+/* ================ */
 
 .our-team {
   background-color: var(--btn-white-bg-color);
@@ -426,7 +436,9 @@ img {
   margin-right: 10px;
 }
 
+/* ================ */
 /* ==== OUR CUSTOMERS ==== */
+/* ================ */
 
 .our-customers-title {
   margin-bottom: 50px;
@@ -862,7 +874,6 @@ img {
 .form-main-window {
   position: relative;
   top: 52px;
-  /* 75px minus height of .leave-your-data 23px */
   left: 40px;
   right: 40px;
   width: 448px;
@@ -943,9 +954,6 @@ img {
 .rules-and-policy {
   position: relative;
   top: 20px;
-  /* 437px minus height of .form-main-window
-  and .leave-your-data =
-  437 - (342 + 23) = 437 - 365 = 72px */
   margin: 0 auto;
   width: 419px;
   height: 24px;

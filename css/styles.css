@@ -750,7 +750,7 @@ img {
   overflow: hidden;
 }
 
-.portfolio-list-item-box:hover .portfolio-list-item-box-overlay {
+.portfolio-list-item:hover .portfolio-list-item-box-overlay{
   transform: translateY(0);
 }
 

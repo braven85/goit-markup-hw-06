@@ -48,11 +48,11 @@ img {
   display: block;
 }
 
-.list {
+li {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -173,7 +173,6 @@ img {
 .nav-links a,
 .nav-header-mail,
 .nav-header-tel {
-  text-decoration: none;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -189,7 +188,6 @@ img {
 .nav-header-mail:focus,
 .nav-header-tel:hover,
 .nav-header-tel:focus {
-  text-decoration: none;
   color: var(--blue-color);
 }
 
@@ -204,7 +202,7 @@ img {
 
 .effective-solutions {
   background-image: linear-gradient(rgba(47, 50, 58, 0.4), rgba(47, 50, 58, 0.4)), url('../images/mainPageBackground.png');
-  background-size: 1600px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(47, 50, 58, 0.4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -226,7 +224,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   margin: 0 auto;
 }
 
@@ -661,8 +658,7 @@ img {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  width: 121px;
-  height: 38px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -705,8 +701,6 @@ img {
 }
 
 .portfolio-list-item {
-  /* width: 370px;
-  height: 404px; */
   border-bottom: 1px solid var(--header-border-color);
   background-color: var(--white-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -718,18 +712,16 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list-description {
-  z-index: 1;
-}
-
 .portfolio-content-title {
   margin-bottom: 4px;
 }
 
 .portfolio-list-item-box {
   position: relative;
-  /* width: 370px;
-  height: 294px; */
+}
+
+.portfolio-list-item-top-box-container {
+  position: relative;
   overflow: hidden;
 }
 
@@ -742,11 +734,10 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   background-color: var(--portfolio-blue-overlay);
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 0;
 }
 
 .portfolio-list-item-box-overlay > p {

@@ -239,8 +239,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
+  padding: 10px 42px;
   border: none;
   border-radius: 4px;
   display: inline-block;
@@ -365,14 +364,15 @@ img {
 
 .our-team-list-item {
   background-color: var(--white-color);
-  width: 270px;
-  height: 428px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-worker-description {
+  padding: 30px 0px;
+}
+
 .our-team-worker-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -413,6 +413,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 10px;
 }
 
 .social-list-link {
@@ -430,10 +431,6 @@ img {
 .social-list-link:focus {
   fill: var(--white-color);
   background-color: var(--blue-color);
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 /* ================ */
@@ -704,14 +701,16 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-list-item {
-  width: 370px;
-  height: 404px;
+  /* width: 370px;
+  height: 404px; */
   border-bottom: 1px solid var(--header-border-color);
   background-color: var(--white-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .portfolio-list-item:hover,
@@ -719,24 +718,8 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list-item:nth-child(3n + 1) {
-  margin-right: 30px;
-}
-
-.portfolio-list-item:nth-child(3n + 2) {
-  margin-right: 30px;
-}
-
-.portfolio-list-item:nth-child(3n + 3) {
-  margin-right: 0px;
-}
-
-.portfolio-list-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-
 .portfolio-list-description {
-  margin: 20px 24px;
+  z-index: 1;
 }
 
 .portfolio-content-title {
@@ -745,8 +728,8 @@ img {
 
 .portfolio-list-item-box {
   position: relative;
-  width: 370px;
-  height: 294px;
+  /* width: 370px;
+  height: 294px; */
   overflow: hidden;
 }
 
@@ -759,10 +742,11 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 294px;
   background-color: var(--portfolio-blue-overlay);
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
 }
 
 .portfolio-list-item-box-overlay > p {
@@ -772,6 +756,11 @@ img {
   line-height: 1.555;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+.portfolio-positioning-box {
+  display: block;
+  padding: 20px 24px;
 }
 
 /* ================ */
